@@ -14,7 +14,7 @@ Download the data into your directory on the server (e.g. Methone, Telesto, GRID
 Login to Methone (172.24.0.234) or Telesto (172.24.0.231) or GRID (172.24.6.65)
 
 Use arcget to download 
-/opt/xnat_tools/ArcGet -u rolsen -p Baycrest540 –s OlRo_M149_BA_13745_PhysioData_20161011 -host https://rrinid.rotman-baycrest.on.ca/spred/
+/opt/xnat_tools/ArcGet -u rolsen -p ASKROSANNA –s OlRo_M149_BA_13745_PhysioData_20161011 -host https://rrinid.rotman-baycrest.on.ca/spred/
 
 Replace the bold portion with label from RRINID. Make sure to read the scanning notes form to match the PID with the subject you are downloading to avoid mix-up. 
 You can also use your own username instead of rolsen and own password instead of Baycrest540
