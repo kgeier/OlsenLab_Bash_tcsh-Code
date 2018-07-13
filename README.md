@@ -14,14 +14,14 @@ Download the data into your directory on the server (e.g. Methone, Telesto, GRID
 Login to Methone (172.24.0.234) or Telesto (172.24.0.231) or GRID (172.24.6.65)
 
 Use arcget to download 
-/opt/xnat_tools/ArcGet -u rolsen -p ASKROSANNA –s OlRo_M149_BA_13745_PhysioData_20161011 -host https://rrinid.rotman-baycrest.on.ca/spred/
+/opt/xnat_tools/ArcGet -u rolsen -p ASKROSANNA –s OlRo_M1... -host https://rrinid.rotman-baycrest.on.ca/spred/
 
 Replace the bold portion with label from RRINID. Make sure to read the scanning notes form to match the PID with the subject you are downloading to avoid mix-up. 
-You can also use your own username instead of rolsen and own password instead of Baycrest540
+You can also use your own username instead of rolsen and own password instead of hers.
 
 
 We used to use the curl command but it doesn’t work after the Xnat2 upgrade: 
-curl -u rolsen:ggmm54 -X GET -v -o s01M084_RyJ_Mri_9243_ALL.zip --url 'http://172.24.0.250:8080/xnat/REST/projects/s01M084_RyJ/subjects/s01M084_RyJ_Subj_9243/experiments/s01M084_RyJ_Mri_9243/scans/ALL/resources/DICOM/files?format=zip'
+curl -u rolsen:..... -X GET -v -o ...._ALL.zip --url 'http://...zip'
 
 Change highlighted text to your specific XNAT login, study name/number, and subject ID.
 
@@ -35,7 +35,7 @@ Preferred naming system Subject 1 = 1001, Subject 2 = 1002, etc
 3.	Copy data onto GRID from server (if downloaded onto Methone or Telesto, which may be better to not store your data on the GRID, but just process results there)
 
 Copy data either using an FTP client (e.g. Firezilla) or scp from a server like Methone
-(e.g. scp rolsen@172.24.0.234:/rri_disks/fortuna/ryan_lab/rosanna/Faces_fMRI/subject01/raw/*zip 1001)
+(e.g. scp rolsen@.../raw/*zip 1001)
 
 4.	Make onset file
 
